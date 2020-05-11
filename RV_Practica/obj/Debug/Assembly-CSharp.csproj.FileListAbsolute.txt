@@ -1,0 +1,2 @@
+D:\UNIVERSIDAD\PROYECTOS\RV\VR_Unity\RV_Practica\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+D:\UNIVERSIDAD\PROYECTOS\RV\VR_Unity\RV_Practica\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
