@@ -167,8 +167,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1538874923}
   _degree: 40
-  _scale: 1.5
-  _numberStart: 60
+  _scale: 1.3
+  _numberStart: 160
   _stepSize: 1
   _maxIteration: 10000
   _useLerping: 1
@@ -247,7 +247,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 4
+  m_Time: 5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.2
@@ -336,8 +336,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1538874923}
   _degree: 40
-  _scale: 1.5
-  _numberStart: 50
+  _scale: 1.3
+  _numberStart: 130
   _stepSize: 1
   _maxIteration: 10000
   _useLerping: 1
@@ -416,7 +416,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 4
+  m_Time: 5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.2
@@ -695,7 +695,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _tunnel: {fileID: 1365608640}
   _audioPeer: {fileID: 1538874923}
-  _tunnelSpeed: 0.5
+  _tunnelSpeed: 0.4
   _cameraDistance: -70
 --- !u!1001 &581552508
 PrefabInstance:
@@ -800,8 +800,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1538874923}
   _degree: 40
-  _scale: 1.5
-  _numberStart: 70
+  _scale: 1.3
+  _numberStart: 190
   _stepSize: 1
   _maxIteration: 10000
   _useLerping: 1
@@ -880,7 +880,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 4
+  m_Time: 5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.2
@@ -1099,7 +1099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1538874923}
   _degree: 40
-  _scale: 1.5
+  _scale: 1.3
   _numberStart: 10
   _stepSize: 1
   _maxIteration: 10000
@@ -1179,7 +1179,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 4
+  m_Time: 5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.2
@@ -1404,8 +1404,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1538874923}
   _degree: 40
-  _scale: 1.5
-  _numberStart: 30
+  _scale: 1.3
+  _numberStart: 70
   _stepSize: 1
   _maxIteration: 10000
   _useLerping: 1
@@ -1484,7 +1484,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 4
+  m_Time: 5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.2
@@ -1886,8 +1886,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1538874923}
   _degree: 40
-  _scale: 1.5
-  _numberStart: 40
+  _scale: 1.3
+  _numberStart: 100
   _stepSize: 1
   _maxIteration: 10000
   _useLerping: 1
@@ -1966,7 +1966,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 4
+  m_Time: 5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.2
@@ -2069,8 +2069,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _audioPeer: {fileID: 1538874923}
   _degree: 40
-  _scale: 1.5
-  _numberStart: 20
+  _scale: 1.3
+  _numberStart: 40
   _stepSize: 1
   _maxIteration: 10000
   _useLerping: 1
@@ -2149,7 +2149,7 @@ TrailRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Time: 4
+  m_Time: 5
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.2
