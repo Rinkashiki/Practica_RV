@@ -79,10 +79,10 @@ public class Phyllotaxis : MonoBehaviour
             {
                 _lerpPosSpeed = Mathf.Lerp(_lerpPosSpeedMinMax.x, _lerpPosSpeedMinMax.y, _lerpPosAnimCurve.Evaluate(-_audioPeer._Amplitude/10));
                 //_lerpPosSpeed = 5;
-                Debug.Log(-_audioPeer._Amplitude);
-                Debug.Log(_lerpPosSpeed);
+                //Debug.Log(-_audioPeer._Amplitude);
+                //Debug.Log(_lerpPosSpeed);
                 _lerpPosTimer += Time.deltaTime * _lerpPosSpeed;
-                Debug.Log(_lerpPosTimer);
+                //Debug.Log(_lerpPosTimer);
                 transform.localPosition = Vector3.Lerp(_startPosition, _endPosition,Mathf.Clamp01(_lerpPosTimer));
                 if(_lerpPosTimer >= 1)
                 {

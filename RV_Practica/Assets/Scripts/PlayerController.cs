@@ -17,6 +17,6 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         player.transform.Rotate(new Vector3(1, 0, 0), 1);
-        
+       
     }
 }
