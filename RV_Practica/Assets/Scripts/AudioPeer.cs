@@ -15,9 +15,11 @@ public class AudioPeer : MonoBehaviour
     float _AmplitudHighest = 1;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         _audioSource = GetComponent<AudioSource>();
+        _audioSource.clip = CurrentSong.song2play;
+        _audioSource.Play();
     }
 
     // Update is called once per frame
