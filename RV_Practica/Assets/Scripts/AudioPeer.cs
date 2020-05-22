@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent (typeof (AudioSource))]
 public class AudioPeer : MonoBehaviour
 {
+    GameManager manager;
     AudioSource _audioSource;
     public static float[] _samples = new float[512];
     public float[] _freqBand = new float[8];
@@ -14,21 +15,30 @@ public class AudioPeer : MonoBehaviour
     public float _Amplitude, _AmplitudeBuffer;
     float _AmplitudHighest = 1;
 
-    // Start is called before the first frame update
     void Awake()
     {
         _audioSource = GetComponent<AudioSource>();
-        _audioSource.clip = CurrentSong.song2play;
+        _audioSource.clip = SceneParams.song2play;
         _audioSource.Play();
+    }
+
+    private void Start()
+    {
+        manager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!_audioSource.isPlaying)
+        {
+            manager.Victory();
+        }
         GetSpectrumAudioSource();
         MakeFrequencyBands();
         BandBuffer();
         GetAmplitude();
+
     }
 
     void GetSpectrumAudioSource()

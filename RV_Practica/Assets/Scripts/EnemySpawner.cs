@@ -16,7 +16,7 @@ public class EnemySpawner : MonoBehaviour
 
     // Spawn ratio per time unit
     private float elapsedTime = 0;
-    private float spawnRate = 0.5f;
+    private float spawnRate = 0.25f;
     private int maxEnemies; 
 
     // Start is called before the first frame update
@@ -39,7 +39,7 @@ public class EnemySpawner : MonoBehaviour
             int count = 0;
             foreach (float band in audioPeer._freqBand)
             {
-                if (band < -1.5f)
+                if (band < -3.0f)
                 {
                     int index = Random.Range(0, spawns.Length);
                     Vector3 spawnPoint = spawns[index].transform.position;

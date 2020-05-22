@@ -187,7 +187,6 @@
     <Compile Include="Assets\GoogleVR\Scripts\Utilities\Internal\SuppressMemoryAllocationErrorAttribute.cs" />
     <Compile Include="Assets\GoogleVR\Scripts\Video\GvrVideoPlayerTexture.cs" />
     <Compile Include="Assets\Scripts\AudioPeer.cs" />
-    <Compile Include="Assets\Scripts\CurrentSong.cs" />
     <Compile Include="Assets\Scripts\EnemyBall.cs" />
     <Compile Include="Assets\Scripts\EnemySpawner.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
@@ -197,6 +196,8 @@
     <Compile Include="Assets\Scripts\Phyllotaxis.cs" />
     <Compile Include="Assets\Scripts\PlayerCollision.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ResultManager.cs" />
+    <Compile Include="Assets\Scripts\SceneParams.cs" />
     <Compile Include="Assets\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\SongMenuController.cs" />
     <Compile Include="Assets\Scripts\SongText.cs" />

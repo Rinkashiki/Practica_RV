@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -24,6 +25,13 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("End");
         // End the game
+        SceneParams.resultText = "You were defeated!!";
+        SceneManager.LoadScene("ResultScene");
     }
 
+    public void Victory()
+    {
+        SceneParams.resultText = "You won!!";
+        SceneManager.LoadScene("ResultScene");
+    }
 }

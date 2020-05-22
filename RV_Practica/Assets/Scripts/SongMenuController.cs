@@ -39,7 +39,7 @@ public class SongMenuController : MonoBehaviour
         {
             if (slider.value == 1)
             {
-                CurrentSong.song2play = songs[0];
+                SceneParams.song2play = songs[0];
                 SceneManager.LoadScene("VR_Game 1");
             }
         }
@@ -47,7 +47,7 @@ public class SongMenuController : MonoBehaviour
         {
             if (slider.value == 1)
             {
-                CurrentSong.song2play = songs[1];
+                SceneParams.song2play = songs[1];
                 SceneManager.LoadScene("VR_Game 1");
             }
         }
