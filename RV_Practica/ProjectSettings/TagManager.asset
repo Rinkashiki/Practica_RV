@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Enemy
   - PlayerInstance
+  - Song1
+  - Song2
   layers:
   - Default
   - TransparentFX

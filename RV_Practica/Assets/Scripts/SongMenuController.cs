@@ -6,14 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class SongMenuController : MonoBehaviour
 {
-    public GameObject playerBall;
     public GameObject progressBar;
     public GameObject songText;
 
     float barTimer;
     Slider slider;
-    float ballHeight;
     List<AudioClip> songs;
+    bool isInside;
+    int songChoice;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,31 +29,37 @@ public class SongMenuController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ballHeight = playerBall.transform.position.y;
 
         barTimer += Time.deltaTime;
         progressBar.SetActive(barTimer > 2.0f ? true : false);
         slider.value = progressBar.activeSelf ? slider.value + 0.005f : 0.0f;
 
-        if (ballHeight > 0.15f && ballHeight < 0.35f)
+        if (slider.value == 1)
         {
-            if (slider.value == 1)
-            {
-                SceneParams.song2play = songs[0];
-                SceneManager.LoadScene("VR_Game 1");
-            }
+            SceneParams.song2play = songs[songChoice];
+            SceneManager.LoadScene("VR_Game 1");
         }
-        else if(ballHeight > -0.4f && ballHeight < -0.2f)
-        {
-            if (slider.value == 1)
-            {
-                SceneParams.song2play = songs[1];
-                SceneManager.LoadScene("VR_Game 1");
-            }
-        }
-        else
+
+        if(!isInside)
         {
             barTimer = 0.0f;
         }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        isInside = true;
+        if (other.gameObject.CompareTag("Song1"))
+        {
+            songChoice = 0;
+        }
+        else if (other.gameObject.CompareTag("Song2"))
+        {
+            songChoice = 1;
+        }
+    }
+    private void OnTriggerExit(Collider other)
+    {
+        isInside = false;
     }
 }
